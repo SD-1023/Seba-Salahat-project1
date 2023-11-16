@@ -1,0 +1,159 @@
+@import url('styles.css');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bg_body);
+}
+
+main {
+    background-color: var(--dark_bg_default);
+    padding: 30px 15% 80px 15%;
+}
+
+main>section>h1,
+main>section>p,
+#addToFav,
+#addToFav>ion-icon {
+    color: var(--dark_body-text);
+}
+
+section>h4 {
+    color: var(--brand-secondary);
+}
+
+section>h1,
+h4,
+.Raiting-bar {
+    margin: 0;
+    padding: 0;
+}
+
+section>p {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+aside {
+    width: 40%;
+    max-width: 340px;
+    float: right;
+    margin-left: 15px;
+    position: relative;
+    bottom: 70px;
+}
+
+.Card {
+    width: 100%;
+    padding: 2px;
+}
+
+.Card,
+.Card-body>div,
+.Details-box {
+    background-color: var(--bg_default);
+    color: var(--body-text);
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.Card>img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3% 3% 0% 0%;
+}
+
+.Card-body {
+    margin: 10px;
+}
+
+.Card-body>div {
+    height: 125px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.Card-body>h3,
+.Card-body>div>h4,
+h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Light-text {
+    text-align: center;
+}
+
+#addToFav {
+    border: none;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--brand-secondary);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+details {
+    padding: 20px 20px 20px 15%;
+    width: 60%;
+}
+
+.Details-box>h3>ion-icon {
+    color: var(--brand-secondary);
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+details>summary {
+    width: 100%;
+    border: none;
+    list-style: none;
+}
+
+.Details-box>h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.Details-box {
+    height: 60px;
+    padding: 15px 30px;
+
+}
+
+@media screen and (max-width: 1300px) {
+    details {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    aside {
+        float: none;
+        top: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    details {
+        width: 100%;
+    }
+
+    .Details-box {
+        height: 80px;
+    }
+}
