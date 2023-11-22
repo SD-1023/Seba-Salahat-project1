@@ -16,37 +16,45 @@ body {
 main {
     background-color: var(--dark_bg_default);
     padding: 30px 15% 80px 15%;
+    height: 300px;
 }
 
-main>section>h1,
+section {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main>h1,
 main>section>p,
 #addToFav,
 #addToFav>ion-icon {
     color: var(--dark_body-text);
 }
 
-section>h4 {
+main>h4 {
     color: var(--brand-secondary);
 }
 
-section>h1,
+main>h1,
 h4,
 .Raiting-bar {
     margin: 0;
     padding: 0;
 }
 
-section>p {
+main>p {
     margin-top: 30px;
     font-size: 14px;
     font-weight: 400;
 }
 
 aside {
-    width: 40%;
-    max-width: 340px;
+    width: 100%;
+    max-width: 430px;
     float: right;
-    margin-left: 15px;
     position: relative;
     bottom: 70px;
 }
@@ -107,7 +115,7 @@ h5 {
 
 details {
     padding: 20px 20px 20px 15%;
-    width: 60%;
+    width: 48%;
 }
 
 .Details-box>h3>ion-icon {
@@ -134,13 +142,13 @@ h3 {
 
 }
 
-@media screen and (max-width: 1300px) {
-    details {
-        width: 55%;
+@media screen and (max-width: 1143px) {
+    main{
+        height:max-content ;
     }
-}
-
-@media screen and (max-width: 900px) {
+    section {
+        display: block;
+    }
     aside {
         float: none;
         top: 16px;
@@ -151,9 +159,42 @@ h3 {
 
     details {
         width: 100%;
+        padding-right: 15%;
     }
 
     .Details-box {
         height: 80px;
+    }
+}
+
+@media screen and (min-width: 1144px) {
+    section {
+        grid-template-columns: 54% 36%;
+    }
+    details {
+        width: 54%;
+    }
+    .Details-box {
+        height: 80px;    
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section {
+        grid-template-columns: 52% 35%;
+    }
+    details {
+        padding: 20px 20px 20px 15%;
+        width: 52%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    section {
+        grid-template-columns: 62% 28%;
+    }
+    details {
+        padding: 20px 20px 20px 15%;
+        width: 59%;
     }
 }
