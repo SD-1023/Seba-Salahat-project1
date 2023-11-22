@@ -14,14 +14,20 @@
 </head>
 
 <body>
-  <header>
+  <header class="Default-bg">
     <h3>Web Topics</h3>
     <span>
-      <button><ion-icon name="moon-outline" class="Button-icon"></ion-icon>Dark Mode</button>
-      <button><ion-icon name="heart-outline" class="Button-icon"></ion-icon>Favourites</button>
+      <button class="Default-bg">
+        <ion-icon name="moon-outline" class="Button-icon"></ion-icon>
+        Dark Mode
+      </button>
+      <button class="Default-bg">
+        <ion-icon name="heart-outline" class="Button-icon"></ion-icon>
+        Favourites
+      </button>
     </span>
   </header>
-  <div class="Heading-Container">
+  <div class="Heading-Container Default-bg">
     <div class="Heading-triangle-right"></div>
     <div class="Heading-triangle-left"></div>
     <div class="Heading-Text">
@@ -32,12 +38,12 @@
 
   <main>
     <span class="Main-line">
-      <span class="Search-bar">
+      <span class="Search-bar Default-bg">
         <ion-icon class="Search-icon" name="search-outline"></ion-icon>
         <input type="text" id="SearchInput" placeholder="Search the website...">
       </span>
       <span class="Select-container">
-        <span class="Dropdown">
+        <span class="Dropdown Default-bg">
           <label for="SortOptions">Sort By:</label>
           <div class="Select">
             <select id="SortOptions">
@@ -45,7 +51,7 @@
             </select>
           </div>
         </span>
-        <span class="Dropdown">
+        <span class="Dropdown Default-bg">
           <label for="FilterOptions">Filter By:</label>
           <div class="Select">
             <select id="FilterOptions">
@@ -56,12 +62,12 @@
       </span>
     </span>
     <div class="Cards-container">
-      <div class="Column" onclick="openPage('details.html')">
-        <div class="Card-box">
+      <div class="Column">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\html.png" alt="HTML" />
           <div class="Card-body">
             <h6>Web Development Languages</h6>
-            <h5>HTML</h5>
+            <a href="details.html"><h5>HTML</h5></a>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -74,7 +80,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\css.webp" alt="CSS" />
           <div class="Card-body">
             <h6>Web Development Languages</h6>
@@ -91,7 +97,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\javascript.jpg" alt="JavaScript" />
           <div class="Card-body">
             <h6>Web Development Languages</h6>
@@ -108,7 +114,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\jquery.png" alt="jQuery" />
           <div class="Card-body">
             <h6>Frontend Frameworks and Libraries</h6>
@@ -125,7 +131,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\angular.png" alt="Angular" />
           <div class="Card-body">
             <h6>Frontend Frameworks and Libraries</h6>
@@ -142,7 +148,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\react.webp" alt="React" />
           <div class="Card-body">
             <h6>Frontend Frameworks and Libraries</h6>
@@ -159,7 +165,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\vuejs.jpeg" alt="Vue.js" />
           <div class="Card-body">
             <h6>Frontend Frameworks and Libraries</h6>
@@ -176,7 +182,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\nodejs.webp" alt="Node.js" />
           <div class="Card-body">
             <h6>Backend Frameworks and Libraries</h6>
@@ -193,7 +199,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\expressjs.webp" alt="Express.js" />
           <div class="Card-body">
             <h6>Backend Frameworks and Libraries</h6>
@@ -210,7 +216,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ruby.jpeg" alt="Ruby On Rails" />
           <div class="Card-body">
             <h6>Backend Frameworks and Libraries</h6>
@@ -227,7 +233,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\django.jpeg" alt="Django" />
           <div class="Card-body">
             <h6>Backend Frameworks and Libraries</h6>
@@ -244,7 +250,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\flask.webp" alt="Flask" />
           <div class="Card-body">
             <h6>Backend Frameworks and Libraries</h6>
@@ -261,7 +267,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\sql.png" alt="SQL" />
           <div class="Card-body">
             <h6>Databases and APIs</h6>
@@ -278,7 +284,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\nosql.png" alt="NoSQL" />
           <div class="Card-body">
             <h6>Databases and APIs</h6>
@@ -295,7 +301,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\restapi.jpeg" alt="Rest APIs" />
           <div class="Card-body">
             <h6>Databases and APIs</h6>
@@ -312,7 +318,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\graphql.png" alt="GraphQl" />
           <div class="Card-body">
             <h6>Databases and APIs</h6>
@@ -329,7 +335,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\oauth.png" alt="OAuth" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -346,7 +352,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\json.png" alt="JSON" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -363,7 +369,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ajax.gif" alt="AJAX" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -380,7 +386,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\websockets.png" alt="Websockets" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -397,7 +403,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\responsive.gif" alt="Responsive Design" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -414,7 +420,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\accessibility.png" alt="Accessibility" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -431,7 +437,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ux.jpeg" alt="User Experience (UX)" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -448,7 +454,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ui.png" alt="User Interface (UI)" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -465,7 +471,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\design-systems.jpeg" alt="Design Systems" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -482,7 +488,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\performance.png" alt="Performance Optimization" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -499,7 +505,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\cross-browser.jpeg"
             alt="Cross-Browser Compatibility" />
           <div class="Card-body">
@@ -517,7 +523,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\seo.jpeg" alt="Search Engine Optimization (SEO)" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -534,7 +540,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\web-security.jpeg" alt="Web Security" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -551,7 +557,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\testing.jpeg" alt="Testing and Debugging" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -568,7 +574,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ci-cd.jpeg"
             alt="Continuous Integration/Continuous..." />
           <div class="Card-body">
@@ -586,7 +592,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\devops.png" alt="DevOps" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -603,7 +609,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\cloud.jpeg" alt="Cloud Computing" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -620,7 +626,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\docker.png" alt="Docker" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -637,7 +643,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\microservices.png" alt="Microservices" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -654,7 +660,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\pwa.png" alt="Progressive Web Apps (PWA)" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -671,7 +677,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\wai.jpeg"
             alt="Web Accessibility Initiative (WAI)" />
           <div class="Card-body">
@@ -689,7 +695,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\cms.png" alt="Content Management Systems (CMS)" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
@@ -706,7 +712,7 @@
         </div>
       </div>
       <div class="Column">
-        <div class="Card-box">
+        <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\analytics.png" alt="Web Analytics" />
           <div class="Card-body">
             <h6>Web Development Concepts and T...</h6>
