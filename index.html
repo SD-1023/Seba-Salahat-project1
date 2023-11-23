@@ -15,9 +15,9 @@
 
 <body>
   <header class="Default-bg">
-    <h3>Web Topics</h3>
+    <h1>Web Topics</h1>
     <span>
-      <button class="Default-bg">
+      <button class="Default-bg" id="darkModeToggle">
         <ion-icon name="moon-outline" class="Button-icon"></ion-icon>
         Dark Mode
       </button>
@@ -28,37 +28,37 @@
     </span>
   </header>
   <div class="Heading-Container Default-bg">
-    <div class="Heading-triangle-right"></div>
-    <div class="Heading-triangle-left"></div>
+    <div class="Heading-triangle Heading-triangle-right"></div>
+    <div class="Heading-triangle Heading-triangle-left"></div>
     <div class="Heading-Text">
-      <h3>Welcome to our website!</h3>
+      <h2>Welcome to our website!</h2>
       <p>We have a new design that's fresh, modern, and easy to use.</p>
     </div>
   </div>
 
-  <main>
+  <main class="Default-Container">
     <span class="Main-line">
-      <span class="Search-bar Default-bg">
+      <span class="Search-bar Default-bg Main-line-component">
         <ion-icon class="Search-icon" name="search-outline"></ion-icon>
-        <input type="text" id="SearchInput" placeholder="Search the website...">
+        <input type="text" id="SearchInput" class="Default-bg" placeholder="Search the website...">
       </span>
       <span class="Select-container">
-        <span class="Dropdown Default-bg">
+        <div class="Dropdown Default-bg Main-line-component">
           <label for="SortOptions">Sort By:</label>
           <div class="Select">
-            <select id="SortOptions">
+            <select id="SortOptions" class="Default-bg">
               <option value="Default">Default</option>
             </select>
           </div>
-        </span>
-        <span class="Dropdown Default-bg">
+        </div>
+        <div class="Dropdown Default-bg Main-line-component">
           <label for="FilterOptions">Filter By:</label>
           <div class="Select">
-            <select id="FilterOptions">
+            <select id="FilterOptions" class="Default-bg">
               <option value="Default">Default</option>
             </select>
           </div>
-        </span>
+        </div>
       </span>
     </span>
     <div class="Cards-container">
@@ -66,8 +66,10 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\html.png" alt="HTML" />
           <div class="Card-body">
-            <h6>Web Development Languages</h6>
-            <a href="details.html"><h5>HTML</h5></a>
+            <h3 class="Card-text">Web Development Languages</h3>
+            <a href="details.html">
+              <h4 class="Card-text">HTML</h4>
+            </a>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -75,7 +77,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Sarah Smith</h5>
+            <h5 class="Light-text Card-text">Author: Sarah Smith</h5>
           </div>
         </div>
       </div>
@@ -83,8 +85,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\css.webp" alt="CSS" />
           <div class="Card-body">
-            <h6>Web Development Languages</h6>
-            <h5>CSS</h5>
+            <h3 class="Card-text">Web Development Languages</h3>
+            <h4 class="Card-text">CSS</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -92,7 +94,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: David Lee</h5>
+            <h5 class="Light-text Card-text">Author: David Lee</h5>
           </div>
         </div>
       </div>
@@ -100,8 +102,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\javascript.jpg" alt="JavaScript" />
           <div class="Card-body">
-            <h6>Web Development Languages</h6>
-            <h5>JavaScript</h5>
+            <h3 class="Card-text">Web Development Languages</h3>
+            <h4 class="Card-text">JavaScript</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -109,7 +111,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Emily Chen</h5>
+            <h5 class="Light-text Card-text">Author: Emily Chen</h5>
           </div>
         </div>
       </div>
@@ -117,8 +119,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\jquery.png" alt="jQuery" />
           <div class="Card-body">
-            <h6>Frontend Frameworks and Libraries</h6>
-            <h5>jQuery</h5>
+            <h3 class="Card-text">Frontend Frameworks and Libraries</h3>
+            <h4 class="Card-text">jQuery</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -126,7 +128,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: John Johnson</h5>
+            <h5 class="Light-text Card-text">Author: John Johnson</h5>
           </div>
         </div>
       </div>
@@ -134,8 +136,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\angular.png" alt="Angular" />
           <div class="Card-body">
-            <h6>Frontend Frameworks and Libraries</h6>
-            <h5>Angular</h5>
+            <h3 class="Card-text">Frontend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Angular</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -143,7 +145,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Jessica Davis</h5>
+            <h5 class="Light-text Card-text">Author: Jessica Davis</h5>
           </div>
         </div>
       </div>
@@ -151,8 +153,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\react.webp" alt="React" />
           <div class="Card-body">
-            <h6>Frontend Frameworks and Libraries</h6>
-            <h5>React</h5>
+            <h3 class="Card-text">Frontend Frameworks and Libraries</h3>
+            <h4 class="Card-text">React</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -160,7 +162,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Daniel Brown</h5>
+            <h5 class="Light-text Card-text">Author: Daniel Brown</h5>
           </div>
         </div>
       </div>
@@ -168,8 +170,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\vuejs.jpeg" alt="Vue.js" />
           <div class="Card-body">
-            <h6>Frontend Frameworks and Libraries</h6>
-            <h5>Vue.js</h5>
+            <h3 class="Card-text">Frontend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Vue.js</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -177,7 +179,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Ava Jones</h5>
+            <h5 class="Light-text Card-text">Author: Ava Jones</h5>
           </div>
         </div>
       </div>
@@ -185,8 +187,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\nodejs.webp" alt="Node.js" />
           <div class="Card-body">
-            <h6>Backend Frameworks and Libraries</h6>
-            <h5>Node.js</h5>
+            <h3 class="Card-text">Backend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Node.js</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -194,7 +196,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Michael Kim</h5>
+            <h5 class="Light-text Card-text">Author: Michael Kim</h5>
           </div>
         </div>
       </div>
@@ -202,8 +204,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\expressjs.webp" alt="Express.js" />
           <div class="Card-body">
-            <h6>Backend Frameworks and Libraries</h6>
-            <h5>Express.js</h5>
+            <h3 class="Card-text">Backend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Express.js</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -211,7 +213,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Sophia Rodriguez</h5>
+            <h5 class="Light-text Card-text">Author: Sophia Rodriguez</h5>
           </div>
         </div>
       </div>
@@ -219,8 +221,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ruby.jpeg" alt="Ruby On Rails" />
           <div class="Card-body">
-            <h6>Backend Frameworks and Libraries</h6>
-            <h5>Ruby On Rails</h5>
+            <h3 class="Card-text">Backend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Ruby On Rails</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -228,7 +230,7 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: William Lee</h5>
+            <h5 class="Light-text Card-text">Author: William Lee</h5>
           </div>
         </div>
       </div>
@@ -236,8 +238,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\django.jpeg" alt="Django" />
           <div class="Card-body">
-            <h6>Backend Frameworks and Libraries</h6>
-            <h5>Django</h5>
+            <h3 class="Card-text">Backend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Django</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -245,7 +247,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Olivia Martinez</h5>
+            <h5 class="Light-text Card-text">Author: Olivia Martinez</h5>
           </div>
         </div>
       </div>
@@ -253,8 +255,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\flask.webp" alt="Flask" />
           <div class="Card-body">
-            <h6>Backend Frameworks and Libraries</h6>
-            <h5>Flask</h5>
+            <h3 class="Card-text">Backend Frameworks and Libraries</h3>
+            <h4 class="Card-text">Flask</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -262,7 +264,7 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Ethan Thompson</h5>
+            <h5 class="Light-text Card-text">Author: Ethan Thompson</h5>
           </div>
         </div>
       </div>
@@ -270,8 +272,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\sql.png" alt="SQL" />
           <div class="Card-body">
-            <h6>Databases and APIs</h6>
-            <h5>SQL</h5>
+            <h3 class="Card-text">Databases and APIs</h3>
+            <h4 class="Card-text">SQL</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -279,7 +281,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Madison Davis</h5>
+            <h5 class="Light-text Card-text">Author: Madison Davis</h5>
           </div>
         </div>
       </div>
@@ -287,8 +289,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\nosql.png" alt="NoSQL" />
           <div class="Card-body">
-            <h6>Databases and APIs</h6>
-            <h5>NoSQL</h5>
+            <h3 class="Card-text">Databases and APIs</h3>
+            <h4 class="Card-text">NoSQL</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -296,7 +298,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Isabella Wilson</h5>
+            <h5 class="Light-text Card-text">Author: Isabella Wilson</h5>
           </div>
         </div>
       </div>
@@ -304,8 +306,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\restapi.jpeg" alt="Rest APIs" />
           <div class="Card-body">
-            <h6>Databases and APIs</h6>
-            <h5>Rest APIs</h5>
+            <h3 class="Card-text">Databases and APIs</h3>
+            <h4 class="Card-text">Rest APIs</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -313,7 +315,7 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Jacob Garcia</h5>
+            <h5 class="Light-text Card-text">Author: Jacob Garcia</h5>
           </div>
         </div>
       </div>
@@ -321,8 +323,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\graphql.png" alt="GraphQl" />
           <div class="Card-body">
-            <h6>Databases and APIs</h6>
-            <h5>GraphQl</h5>
+            <h3 class="Card-text">Databases and APIs</h3>
+            <h4 class="Card-text">GraphQl</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -330,7 +332,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Mia Brown</h5>
+            <h5 class="Light-text Card-text">Author: Mia Brown</h5>
           </div>
         </div>
       </div>
@@ -338,8 +340,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\oauth.png" alt="OAuth" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>OAuth</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">OAuth</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -347,7 +349,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Evelyn Nguyen</h5>
+            <h5 class="Light-text Card-text">Author: Evelyn Nguyen</h5>
           </div>
         </div>
       </div>
@@ -355,8 +357,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\json.png" alt="JSON" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>JSON</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">JSON</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -364,7 +366,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Liam Hernandez</h5>
+            <h5 class="Light-text Card-text">Author: Liam Hernandez</h5>
           </div>
         </div>
       </div>
@@ -372,8 +374,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ajax.gif" alt="AJAX" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>AJAX</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">AJAX</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -381,7 +383,7 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Avery Perez</h5>
+            <h5 class="Light-text Card-text">Author: Avery Perez</h5>
           </div>
         </div>
       </div>
@@ -389,8 +391,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\websockets.png" alt="Websockets" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Websockets</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Websockets</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -398,7 +400,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Victoria Kim</h5>
+            <h5 class="Light-text Card-text">Author: Victoria Kim</h5>
           </div>
         </div>
       </div>
@@ -406,8 +408,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\responsive.gif" alt="Responsive Design" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Responsive Design</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Responsive Design</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -415,7 +417,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Ryan Jones</h5>
+            <h5 class="Light-text Card-text">Author: Ryan Jones</h5>
           </div>
         </div>
       </div>
@@ -423,8 +425,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\accessibility.png" alt="Accessibility" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Accessibility</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Accessibility</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -432,7 +434,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Samantha Martin</h5>
+            <h5 class="Light-text Card-text">Author: Samantha Martin</h5>
           </div>
         </div>
       </div>
@@ -440,8 +442,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ux.jpeg" alt="User Experience (UX)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>User Experience (UX)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">User Experience (UX)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -449,7 +451,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Luke Davis</h5>
+            <h5 class="Light-text Card-text">Author: Luke Davis</h5>
           </div>
         </div>
       </div>
@@ -457,8 +459,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\ui.png" alt="User Interface (UI)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>User Interface (UI)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">User Interface (UI)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -466,7 +468,7 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Grace Wilson</h5>
+            <h5 class="Light-text Card-text">Author: Grace Wilson</h5>
           </div>
         </div>
       </div>
@@ -474,8 +476,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\design-systems.jpeg" alt="Design Systems" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Design Systems</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Design Systems</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -483,7 +485,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Noah Martinez</h5>
+            <h5 class="Light-text Card-text">Author: Noah Martinez</h5>
           </div>
         </div>
       </div>
@@ -491,8 +493,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\performance.png" alt="Performance Optimization" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Performance Optimization</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Performance Optimization</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -500,17 +502,16 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Chloe Taylor</h5>
+            <h5 class="Light-text Card-text">Author: Chloe Taylor</h5>
           </div>
         </div>
       </div>
       <div class="Column">
         <div class="Card-box Default-bg">
-          <img class="Logo" src="assets\Logos\cross-browser.jpeg"
-            alt="Cross-Browser Compatibility" />
+          <img class="Logo" src="assets\Logos\cross-browser.jpeg" alt="Cross-Browser Compatibility" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Cross-Browser Compatibility</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Cross-Browser Compatibility</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -518,7 +519,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: David Lee</h5>
+            <h5 class="Light-text Card-text">Author: David Lee</h5>
           </div>
         </div>
       </div>
@@ -526,8 +527,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\seo.jpeg" alt="Search Engine Optimization (SEO)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Search Engine Optimization (SEO)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Search Engine Optimization (SEO)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -535,7 +536,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Emily Kim</h5>
+            <h5 class="Light-text Card-text">Author: Emily Kim</h5>
           </div>
         </div>
       </div>
@@ -543,8 +544,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\web-security.jpeg" alt="Web Security" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Web Security</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Web Security</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -552,7 +553,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Gabriel Hernandez</h5>
+            <h5 class="Light-text Card-text">Author: Gabriel Hernandez</h5>
           </div>
         </div>
       </div>
@@ -560,8 +561,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\testing.jpeg" alt="Testing and Debugging" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Testing and Debugging</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Testing and Debugging</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -569,17 +570,16 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Avery Perez</h5>
+            <h5 class="Light-text Card-text">Author: Avery Perez</h5>
           </div>
         </div>
       </div>
       <div class="Column">
         <div class="Card-box Default-bg">
-          <img class="Logo" src="assets\Logos\ci-cd.jpeg"
-            alt="Continuous Integration/Continuous..." />
+          <img class="Logo" src="assets\Logos\ci-cd.jpeg" alt="Continuous Integration/Continuous..." />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Continuous Integration/Continuous...</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Continuous Integration/Continuous...</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -587,7 +587,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Madison Davis</h5>
+            <h5 class="Light-text Card-text">Author: Madison Davis</h5>
           </div>
         </div>
       </div>
@@ -595,8 +595,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\devops.png" alt="DevOps" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>DevOps</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">DevOps</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -604,7 +604,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Isabella Wilson</h5>
+            <h5 class="Light-text Card-text">Author: Isabella Wilson</h5>
           </div>
         </div>
       </div>
@@ -612,8 +612,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\cloud.jpeg" alt="Cloud Computing" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Cloud Computing</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Cloud Computing</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -621,7 +621,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Jacob Garcia</h5>
+            <h5 class="Light-text Card-text">Author: Jacob Garcia</h5>
           </div>
         </div>
       </div>
@@ -629,8 +629,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\docker.png" alt="Docker" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Docker</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Docker</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -638,7 +638,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Mia Brown</h5>
+            <h5 class="Light-text Card-text">Author: Mia Brown</h5>
           </div>
         </div>
       </div>
@@ -646,8 +646,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\microservices.png" alt="Microservices" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Microservices</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Microservices</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -655,7 +655,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Evelyn Nguyen</h5>
+            <h5 class="Light-text Card-text">Author: Evelyn Nguyen</h5>
           </div>
         </div>
       </div>
@@ -663,8 +663,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\pwa.png" alt="Progressive Web Apps (PWA)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Progressive Web Apps (PWA)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Progressive Web Apps (PWA)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -672,17 +672,16 @@
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Liam Hernandez</h5>
+            <h5 class="Light-text Card-text">Author: Liam Hernandez</h5>
           </div>
         </div>
       </div>
       <div class="Column">
         <div class="Card-box Default-bg">
-          <img class="Logo" src="assets\Logos\wai.jpeg"
-            alt="Web Accessibility Initiative (WAI)" />
+          <img class="Logo" src="assets\Logos\wai.jpeg" alt="Web Accessibility Initiative (WAI)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Web Accessibility Initiative (WAI)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Web Accessibility Initiative (WAI)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -690,7 +689,7 @@
               <span><ion-icon class="Star" name="star-half-outline"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Avery Perez</h5>
+            <h5 class="Light-text Card-text">Author: Avery Perez</h5>
           </div>
         </div>
       </div>
@@ -698,8 +697,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\cms.png" alt="Content Management Systems (CMS)" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Content Management Systems (CMS)</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Content Management Systems (CMS)</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -707,7 +706,7 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Victoria Kim</h5>
+            <h5 class="Light-text Card-text">Author: Victoria Kim</h5>
           </div>
         </div>
       </div>
@@ -715,8 +714,8 @@
         <div class="Card-box Default-bg">
           <img class="Logo" src="assets\Logos\analytics.png" alt="Web Analytics" />
           <div class="Card-body">
-            <h6>Web Development Concepts and T...</h6>
-            <h5>Web Analytics</h5>
+            <h3 class="Card-text">Web Development Concepts and T...</h3>
+            <h4 class="Card-text">Web Analytics</h4>
             <div class="Raiting-bar">
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star"></ion-icon></span>
@@ -724,24 +723,20 @@
               <span><ion-icon class="Star" name="star"></ion-icon></span>
               <span><ion-icon class="Star" name="star-outline"></ion-icon></span>
             </div>
-            <h5 class="Light-text">Author: Ryan Jones</h5>
+            <h5 class="Light-text Card-text">Author: Ryan Jones</h5>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="Default-Container">
     <h4>Developed with <ion-icon id="heartIcon" name="heart"></ion-icon> &copy; 2023</h4>
   </footer>
   <!-- Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <script>
-    function openPage(url) {
-      window.location.href = url;
-    }
-  </script>
+  <script src="Dark_Mode_Functions.js"></script>
 </body>
 
 </html>

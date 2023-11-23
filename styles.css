@@ -4,6 +4,7 @@
     --bg_default: #FFFFFF;
     --dark_bg_default: #1A1A1A;
     --bg_body: #F0F9FF;
+    --dark_bg_body: #282828;
     --lines-color: #DDDDDD;
     --dark_lines-color: #000000;
     --body-text: #333333;
@@ -44,7 +45,7 @@ ion-icon {
     font-size: 13px;
 }
 
-header>h3 {
+header>h1 {
     display: inline-block;
     font-size: 13px;
     color: var(--brand-primary);
@@ -83,15 +84,16 @@ header {
     z-index: 2;
 }
 
-.Heading-Text>h3,
+.Heading-Text>h2,
 p {
     padding: 0;
     margin: 0;
 }
 
-.Heading-Text>h3 {
+.Heading-Text>h2 {
     color: var(--brand-secondary);
     font-weight: 700;
+    font-size: 19px;
 }
 
 .Heading-Text>p {
@@ -99,8 +101,7 @@ p {
 }
 
 
-.Heading-triangle-left,
-.Heading-triangle-right {
+.Heading-triangle {
     width: 0;
     height: 0;
     border-style: solid;
@@ -126,26 +127,24 @@ main {
     height: max-content
 }
 
-main,
-footer {
+.Default-Container {
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.Main-line{
+.Main-line {
     box-sizing: border-box;
     width: 100%;
     height: fit-content;
     border-radius: 10px;
-    display: flex;     
+    display: flex;
     overflow: hidden;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.Search-bar,
-.Dropdown {
+.Main-line-component {
     padding: 5px 10px 5px 10px;
     margin-right: 2px;
     height: 50px;
@@ -172,14 +171,14 @@ footer {
 }
 
 .Dropdown {
-    display: block;
+    width: 100%;
+    border: 0px;
 }
 
 .Dropdown>label {
     font-size: 12px;
 }
 
-.Dropdown,
 select {
     width: 100%;
     border: 0px;
@@ -225,15 +224,24 @@ select {
     padding-bottom: 20px;
 }
 
-.Card-body>h6,
+.Card-body>h3 {
+    font-size: 11px;
+}
+
+h4,
 h5 {
+    font-size: 13px;
+}
+
+
+.Card-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -262,6 +270,13 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.Dark-mode {
+    --bg_default: var(--dark_bg_default);
+    --bg_body: var(--dark_bg_body);
+    --lines-color: var(--dark_lines-color);
+    --body-text: var(--dark_body-text);
 }
 
 @media screen and (min-width: 1600px) {
@@ -328,5 +343,3 @@ footer {
         padding-top: 60px;
     }
 }
-
-
