@@ -15,6 +15,7 @@
 * {
     box-sizing: border-box;
     color: var(--body-text);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 html,
@@ -29,7 +30,6 @@ body {
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: var(--bg_body);
@@ -58,6 +58,7 @@ header>span>button {
     border: solid 1px var(--lines-color);
     padding: 8px 10px;
     margin-left: 3px;
+    font-weight: 600;
 }
 
 header>span {
@@ -190,6 +191,10 @@ select {
 #heartIcon {
     color: var(--heart-color);
     font-size: 20px;
+}
+
+strong {
+    font-weight: bolder;
 }
 
 .cards-container {
