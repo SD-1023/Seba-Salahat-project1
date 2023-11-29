@@ -23,7 +23,7 @@ body {
     width: 100%;
 }
 
-.Default-bg {
+.default-bg {
     color: var(--body-text);
     background-color: var(--bg_default);
 }
@@ -39,7 +39,7 @@ ion-icon {
     vertical-align: middle;
 }
 
-.Button-icon {
+.button-icon {
     padding-right: 3px;
     align-items: center;
     font-size: 13px;
@@ -71,37 +71,37 @@ header {
     align-items: baseline;
 }
 
-.Heading-Container {
+.heading-container {
     display: flex;
     justify-content: center;
     height: 105px;
     position: relative;
 }
 
-.Heading-Text {
+.heading-text {
     padding-top: 45px;
     text-align: center;
     z-index: 2;
 }
 
-.Heading-Text>h2,
+.heading-text>h2,
 p {
     padding: 0;
     margin: 0;
 }
 
-.Heading-Text>h2 {
+.heading-text>h2 {
     color: var(--brand-secondary);
     font-weight: 700;
     font-size: 19px;
 }
 
-.Heading-Text>p {
+.heading-text>p {
     font-weight: 400;
 }
 
 
-.Heading-triangle {
+.heading-triangle {  
     width: 0;
     height: 0;
     border-style: solid;
@@ -109,15 +109,15 @@ p {
     z-index: 1;
 }
 
-.Heading-triangle-left {
-    border-width: 0px 0 70px 100vw;
+.heading-triangle-left {
+    border-width: 0px 0 70px 90vw;
     border-color: transparent transparent transparent var(--brand-primary);
     position: absolute;
     left: 0;
 }
 
-.Heading-triangle-right {
-    border-width: 0 100vw 70px 0;
+.heading-triangle-right {
+    border-width: 0 90vw 70px 0;
     border-color: transparent var(--brand-secondary) transparent transparent;
     position: absolute;
     right: 0;
@@ -127,14 +127,14 @@ main {
     height: max-content
 }
 
-.Default-Container {
+.default-container {
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.Main-line {
+.main-line {
     box-sizing: border-box;
     width: 100%;
     height: fit-content;
@@ -144,13 +144,13 @@ main {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.Main-line-component {
+.main-line-component {
     padding: 5px 10px 5px 10px;
     margin-right: 2px;
     height: 50px;
 }
 
-.Search-bar {
+.search-bar {
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -161,21 +161,21 @@ main {
     border: 0px;
 }
 
-.Search-icon {
+.search-icon {
     padding-top: 12px;
 }
 
-.Select-container {
+.select-container {
     display: flex;
     width: 40%;
 }
 
-.Dropdown {
+.dropdown {
     width: 100%;
     border: 0px;
 }
 
-.Dropdown>label {
+.dropdown>label {
     font-size: 12px;
 }
 
@@ -189,7 +189,7 @@ select {
     font-size: 20px;
 }
 
-.Cards-container {
+.cards-container {
     width: 100%;
     height: 100%;
     display: grid;
@@ -197,34 +197,33 @@ select {
     grid-template-columns: 18% 18% 18% 18% 18%;
 }
 
-.Column {
+.column {
     width: 100%;
     height: 321px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-block: 15px;
 }
 
-.Card-box {
+.card-box {
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-.Logo {
+.logo {
     height: 170px;
     width: 100%;
     object-fit: cover;
 }
 
-.Card-body {
+.card-body {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 12px;
     padding-bottom: 20px;
 }
 
-.Card-body>h3 {
+.card-body>h3 {
     font-size: 11px;
 }
 
@@ -234,7 +233,7 @@ h5 {
 }
 
 
-.Card-text {
+.card-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -245,16 +244,16 @@ a {
     text-decoration: none;
 }
 
-.Raiting-bar {
+.raiting-bar {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.Star {
+.star {
     color: goldenrod;
 }
 
-.Light-text {
+.light-text {
     font-weight: 200;
 }
 
@@ -280,51 +279,51 @@ footer {
 }
 
 @media screen and (min-width: 1600px) {
-    .Cards-container {
+    .cards-container {
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
     }
 }
 
 @media screen and (max-width: 1220px) {
-    .Cards-container {
+    .cards-container {
         grid-template-columns: 23% 23% 23% 23%;
     }
 }
 
 @media screen and (max-width: 970px) {
-    .Cards-container {
+    .cards-container {
         grid-template-columns: 30% 30% 30%;
     }
 }
 
 @media screen and (max-width: 670px) {
-    .Cards-container {
+    .cards-container {
         grid-template-columns: 45% 45%;
     }
 }
 
 @media screen and (max-width: 547px) {
-    .Main-line {
+    .main-line {
         display: block;
     }
 
-    .Dropdown,
+    .dropdown,
     select {
         width: 100%;
     }
 
-    .Select-container {
+    .select-container {
         width: 100%;
         margin-top: 2px;
     }
 
-    .Search-bar {
+    .search-bar {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .Cards-container {
+    .cards-container {
         grid-template-columns: 100%;
     }
 }
@@ -334,12 +333,12 @@ footer {
         font-size: 0px;
     }
 
-    .Heading-Container {
+    .heading-container {
         height: 140px;
         margin-bottom: 15px;
     }
 
-    .Heading-Text {
+    .heading-text {
         padding-top: 60px;
     }
 }
