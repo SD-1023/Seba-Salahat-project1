@@ -26,7 +26,7 @@ section {
     color: var(--dark_body-text);
 }
 
-#addToFav>ion-icon {
+.fav-icon {
     font-size: 35px;
 }
 
@@ -40,7 +40,7 @@ main>h2,
     padding: 0;
 }
 
-main>p {
+.details-paragraph {
     margin-top: 30px;
     font-size: 14px;
     font-weight: 400;
@@ -70,7 +70,7 @@ aside {
     margin: 10px;
 }
 
-.card-body>div {
+.inner-box {
     height: 160px;
     padding: 20px;
     margin-top: 10px;
@@ -78,7 +78,7 @@ aside {
 }
 
 .card-body>h3,
-.card-body>div>h4,
+.inner-box>h4,
 h5 {
     margin: 0;
     font-size: 14px;
@@ -89,7 +89,7 @@ h5 {
     text-align: center;
 }
 
-#addToFav {
+.favourite-button {
     border: none;
     display: inline-block;
     padding: 20px;

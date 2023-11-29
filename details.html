@@ -18,16 +18,17 @@
     <header class="default-bg">
         <h1>Web Topics</h1>
         <span>
-            <button class="default-bg">
-                <ion-icon name="moon-outline" class="button-icon" id="darkModeToggle"></ion-icon>
-                Dark Mode
-            </button>
-            <button class="default-bg">
-                <ion-icon name="heart-outline" class="button-icon"></ion-icon>
-                Favourites
-            </button>
+          <button class="default-bg header-button" id="darkModeToggle">
+            <ion-icon name="moon-outline" class="button-icon"></ion-icon>
+            Dark Mode
+          </button>
+          <button class="default-bg header-button">
+            <ion-icon name="heart-outline" class="button-icon"></ion-icon>
+            Favourites
+          </button>
         </span>
-    </header>
+      </header>
+
     <div class="heading-container default-bg">
         <div class="heading-triangle heading-triangle-right"></div>
         <div class="heading-triangle heading-triangle-left"></div>
@@ -36,6 +37,7 @@
             <p>We have a new design that's fresh, modern, and easy to use.</p>
         </div>
     </div>
+
     <main>
         <h2>Web Development Languages</h2>
         <h2 class="heighlited-text">HTML</h2>
@@ -47,7 +49,7 @@
             <span><ion-icon class="star" name="star-outline"></ion-icon></span>
         </div>
         <section>
-            <p class="heighlited-text">HTML (Hypertext Markup Languages) is the standard markup language for creating
+            <p class="details-paragraph heighlited-text">HTML (Hypertext Markup Languages) is the standard markup language for creating
                 web pages and other
                 information that can be displayed in a web browser. It provides a structure for content and defines how
                 it should be displayed on a web page, including text, images, and multimedia. HTML is essential for
@@ -58,10 +60,10 @@
                     <img src="assets\logos\javascript.jpg" alt="HTML" style="width:100%">
                     <div class="card-body">
                         <h3>HTML by <a href="#">Sarah Smith</a></h3>
-                        <div>
+                        <div class="inner-box">
                             <h4>Interested about this topic?</h4>
-                            <button id="addToFav" class="heighlited-text">Add to Favourites
-                                <ion-icon name="heart-outline" class="heighlited-text"></ion-icon>
+                            <button class="favourite-button heighlited-text">Add to Favourites
+                                <ion-icon name="heart-outline" class="fav-icon heighlited-text"></ion-icon>
                             </button>
                             <h5 class="light-text">Unlimited Credits</h5>
                         </div>
