@@ -7,33 +7,30 @@
     --dark-container-bg: #333333;
 }
 
-main {
+section {
     background-color: var(--dark-container-bg);
-    color: var(--dark_body-text);
-    padding: 30px 240px 30px 240px;
-    display: grid;
-    grid-template-columns: 62% 35%;
-    gap: 35px;
-    height: 300px;
 }
 
-section {
-    width: 100%;
-    box-sizing: border-box;
+.topic-details{
+    margin-left: 240px;
+    padding-block: 40px;
+    width: 44%;
 }
 
 .heighlited-text {
     color: var(--dark_body-text);
+    margin: 0px;
 }
 
 .fav-icon {
     font-size: 35px;
 }
 
-section>h2 {
+.topic-title {
     color: var(--brand-secondary);
     font-size: 15px;
     font-weight: 400;
+    margin: 0px;
 }
 
 section>h1,
@@ -44,17 +41,19 @@ section>h2,
 }
 
 .details-paragraph {
-    margin-top: 30px;
+    color: var(--dark_body-text);
     font-size: 16px;
     font-weight: 400;
+    padding-right: 15px;
 }
 
 aside {
-    width: 100%;
-    max-width: 430px;
+    width: 50%;
+    max-width: 330px;
     float: right;
     position: relative;
-    top: 5px;
+    bottom: 180px;
+    left: 52%;
 }
 
 .card {
@@ -107,8 +106,8 @@ h5 {
 }
 
 .details {
-    padding: 50px 20px 20px 200px;
-    width: 61%;
+    margin: 50px 20px 20px 240px;
+    width: 43%;
     border-radius: 3px;
 }
 
@@ -143,34 +142,34 @@ h3 {
     border-radius: 0px 7px 0px 7px;
 }
 
-@media screen and (max-width: 1190px) {
-    main {
-        padding: 30px 90px 80px 90px;
-        height: max-content;
-        border-bottom: 1px;
+@media screen and (min-width: 1650px){
+    aside {
+        bottom: 155px;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .topic-details{
+        margin: auto;
+        padding-block: 40px;
+        width: 70%;
         display: block;
     }
 
     aside {
+        max-width: 400px;
+        min-width: 300px;
+        position: relative;
         float: none;
-        top: 16px;
-        margin-block: 15px;
-        width: 100%;
+        bottom: 0px;
+        left:0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+    }
+
+    .details {
+        width: 70%;
         margin-inline: auto;
-    }
-
-    .details {
-        width: 100%;
-        padding: 50px 90px 20px 90px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    main {
-        grid-template-columns: 67% 29%;
-    }
-
-    .details {
-        width: 65%;
     }
 }
